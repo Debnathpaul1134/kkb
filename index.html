@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/companions.css" />
   <link rel="stylesheet" href="css/gallery-polish.css" />
   <link rel="stylesheet" href="css/fun-zone.css" />
+  <link rel="stylesheet" href="css/candle-game.css" />
 </head>
 <body>
   <canvas id="stars"></canvas>
@@ -90,14 +91,16 @@
     </section>
 
     <section class="wish section">
-      <div class="cake-scene tilt" aria-label="A birthday cake with a burning candle">
+      <div class="cake-scene tilt" id="cake-scene" aria-label="A birthday cake with a burning candle">
         <div class="cake-glow"></div>
         <div class="candle-group"><div class="smoke smoke-one"></div><div class="smoke smoke-two"></div><div class="flame"><i class="flame-inner"></i></div><div class="wick"></div><div class="candle"><i class="wax-drip"></i></div></div>
         <div class="cake-top"><i class="cream cream-one"></i><i class="cream cream-two"></i><i class="cream cream-three"></i></div><div class="cake"></div><div class="cake-base"></div>
       </div>
+      <div class="cake-teddy" id="cake-teddy" aria-hidden="true"><span class="walking-teddy">🧸</span><span class="tiny-knife">🔪</span><span class="cake-slice">🍰</span><b>nom nom!</b></div>
       <p class="eyebrow">MAKE A WISH</p>
       <h2>May your year be<br>full of <em>beautiful things.</em></h2>
-      <div class="wish-actions"><button id="celebrate">Tap for birthday magic ✦</button><button id="music" class="music-button" aria-pressed="false">♪ Play the Happy Birthday song</button></div>
+      <div class="wish-actions"><button id="blow-candle" class="blow-button">🎤 Blow out the candle</button><button id="celebrate">Tap for birthday magic ✦</button><button id="music" class="music-button" aria-pressed="false">♪ Play the Happy Birthday song</button></div>
+      <p class="blow-status" id="blow-status">Tap the candle button, allow microphone access, then blow gently.</p>
       <div class="flower-trail wish-flowers" aria-hidden="true"><span>🌹</span><span>🌻</span><span>🪷</span><span>🌺</span><span>🌸</span></div>
       <div class="teddy-stage" aria-label="A teddy bear sending flowers and love">
         <div class="teddy">
@@ -114,5 +117,6 @@
   <script src="js/script.js"></script>
   <script src="js/music.js"></script>
   <script src="js/fun-zone.js"></script>
+  <script src="js/candle-game.js"></script>
 </body>
 </html>
