@@ -6,8 +6,8 @@ function extinguishCandle() {
   if (candleIsOut) return;
   candleIsOut = true;
   document.getElementById('cake-scene').classList.add('candle-out');
-  blowStatus.textContent = 'Wish granted! Look who came for cake…';
-  blowButton.textContent = '✨ Your wish came true'; blowButton.disabled = true;
+  blowStatus.textContent = '✦ Wish granted — look who came for cake…';
+  blowButton.classList.add('complete'); blowButton.disabled = true;
   document.getElementById('celebrate').click();
   setTimeout(() => { document.getElementById('cake-scene').classList.add('cake-eaten'); document.getElementById('cake-teddy').classList.add('arrive'); }, 550);
 }

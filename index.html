@@ -19,6 +19,16 @@
 <body>
   <canvas id="stars"></canvas>
   <div class="noise"></div>
+  <button id="opening-curtain" class="opening-curtain" type="button" aria-label="Open the birthday surprise">
+    <span class="curtain-panel curtain-left" aria-hidden="true"></span><span class="curtain-panel curtain-right" aria-hidden="true"></span>
+    <span class="curtain-content"><i>✦</i><strong>A little surprise<br>just for you</strong><small>Tap to open ♡</small></span>
+  </button>
+  <button id="music-toggle" class="music-toggle" type="button" aria-pressed="false" aria-label="Turn on birthday music">
+    <span class="music-toggle-icon" aria-hidden="true">♫</span><span class="music-toggle-text">Music off</span>
+  </button>
+  <audio id="birthday-audio" preload="auto">
+    <source src="WhatsApp Audio 2026-09-16 at 11.08.52 PM.mpeg" type="audio/mpeg" />
+  </audio>
 
   <main>
     <section class="hero" id="top">
@@ -99,7 +109,7 @@
       <div class="cake-teddy" id="cake-teddy" aria-hidden="true"><span class="walking-teddy">🧸</span><span class="tiny-knife">🔪</span><span class="cake-slice">🍰</span><b>nom nom!</b></div>
       <p class="eyebrow">MAKE A WISH</p>
       <h2>May your year be<br>full of <em>beautiful things.</em></h2>
-      <div class="wish-actions"><button id="blow-candle" class="blow-button">🎤 Blow out the candle</button><button id="celebrate">Tap for birthday magic ✦</button><button id="music" class="music-button" aria-pressed="false">♪ Play the Happy Birthday song</button></div>
+      <div class="wish-actions"><button id="blow-candle" class="blow-button">🎤 Blow out the candle</button><button id="celebrate">Tap for birthday magic ✦</button></div>
       <p class="blow-status" id="blow-status">Tap the candle button, allow microphone access, then blow gently.</p>
       <div class="flower-trail wish-flowers" aria-hidden="true"><span>🌹</span><span>🌻</span><span>🪷</span><span>🌺</span><span>🌸</span></div>
       <div class="teddy-stage" aria-label="A teddy bear sending flowers and love">
